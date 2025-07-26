@@ -14,5 +14,12 @@ export class AppComponent {
   title: string = 'Code step by step';
   name: string = 'GFL';
 
+  handleClickEvent() {
+    console.log('Btn was clicked');
+    this.otherMethod();
+  }
 
+  otherMethod () {
+    console.log('other method');
+  }
 }
