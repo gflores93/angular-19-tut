@@ -1,2 +1,13 @@
-<h1>Base project</h1>
+<h1>Get and Set input field value</h1>
+<h2>{{ username }}</h2>
+<input
+  type="text"
+  placeholder="enter user name"
+  value="{{username}}"
+  (input)="getUserName($event)"
+  #userNameField
+/>
+<br /><br />
+<button (click)="setUserName()">Set user name</button>
+<button (click)="getUserNameWithTemplate(userNameField.value)">Get user name</button>
 
