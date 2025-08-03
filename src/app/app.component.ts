@@ -1,25 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { ProfileComponent } from './profile/profile.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, SignupComponent, ProfileComponent],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title: string = 'Code step by step';
-  name: string = 'GFL';
-
-  handleClickEvent() {
-    console.log('Btn was clicked');
-    this.otherMethod();
-  }
-
-  otherMethod () {
-    console.log('other method');
-  }
-}
+export class AppComponent {}
